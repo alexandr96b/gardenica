@@ -1,0 +1,153 @@
+.b-footer{
+  background: #9CC57C;
+  padding: 36px 0 46px 0;
+  @include box-sizing;
+  @include _1680{
+	padding: 20px 0;
+  }
+  @include _767{
+	padding: 36px 0 75px 0;
+  }
+  .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 45px;
+	@include _767{
+	  display: block;
+	}
+  }
+  &__left{
+	&-row{
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  @include _767{
+		display: block;
+	  }
+	}
+  }
+  &__logo{
+	margin: 0 0 32px 0;
+	@include _1680{
+	  max-width: 196px;
+	}
+	@include _991{
+	  max-width: 140px;
+	  margin-bottom: 15px;
+	}
+	@include _767{
+	  max-width: 221px;
+	  margin-bottom: 41px;
+	}
+  }
+  &__social{
+	margin-right: 77px;
+	&.xs{
+	  display: none;
+	}
+	@include _1680{
+	  margin-right: 40px;
+	}
+	@include _991{
+	  margin-right: 20px;
+	}
+	@include _767{
+	  display: none;
+	  &.xs{
+		display: block;
+		margin: 78px 0 0 0;
+	  }
+	}
+	ul{
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  li{
+		&:not(:last-child){
+		  margin-right: 10px;
+		}
+		a{
+		  display: block;
+		  max-width: 50px;
+		  @include transition;
+		  &:hover , &:active , &:focus{
+			opacity: 0.7;
+		  }
+		  @include _1680{
+			max-width: 40px;
+		  }
+		  @include _991{
+			max-width: 30px;
+		  }
+		  @include _767{
+			max-width: 67px;
+		  }
+		}
+	  }
+	}
+  }
+  &__link{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1;
+	color: #FFFFFF;
+	@include transition;
+	&:hover , &:active , &:focus{
+	  text-decoration: none;
+	  color: #ffffff;
+	  opacity: 0.7;
+	}
+	@include _1680{
+	  font-size: 20px;
+	}
+	@include _767{
+	  display: block;
+	  font-size: 24px;
+	  margin-bottom: 35px;
+	}
+  }
+  &__nav{
+	min-width: 590px;
+	@include _1680{
+	  min-width: 415px;
+	}
+	@include _991{
+	  min-width: auto;
+	}
+	ul{
+	  li{
+		@include _767{
+		  &:not(:last-child){
+			margin-bottom: 35px;
+		  }
+		}
+		a{
+		  display: block;
+		  font-weight: 400;
+		  font-size: 28px;
+		  line-height: 44px;
+		  color: #FFFFFF;
+		  @include transition;
+		  &:hover , &:active , &:focus{
+			text-decoration: none;
+			color: #ffffff;
+			opacity: 0.7;
+		  }
+		  @include _1680{
+			font-size: 20px;
+			line-height: 36px;
+		  }
+		  @include _991{
+			font-size: 18px;
+			line-height: 26px;
+		  }
+		  @include _767{
+			font-size: 24px;
+			line-height: 1.2;
+		  }
+		}
+	  }
+	}
+  }
+}

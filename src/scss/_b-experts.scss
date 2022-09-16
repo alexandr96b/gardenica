@@ -1,0 +1,119 @@
+.b-experts{
+  background: url("../img/main.webp") center top no-repeat;
+  background-size: cover;
+  padding: 112px 0 230px 0;
+  @include box-sizing;
+  position: relative;
+  @include _1680{
+	padding: 80px 0 230px 0;
+  }
+  @include _1199{
+	padding: 80px 0 195px 0;
+  }
+  @include _991{
+	padding: 50px 0 195px 0;
+  }
+  @include _767{
+	padding: 37px 0 200px 0;
+  }
+  &:before{
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	background: url("../img/leaves-ex.png") center no-repeat;
+	width: 811px;
+	height: 526px;
+	@include _1680{
+	  height: 324px;
+	  max-width: 500px;
+	  background-size: contain;
+	}
+	@include _1199{
+	  height: 245px;
+	  max-width: 380px;
+	}
+	@include _991{
+	  display: none;
+	}
+  }
+  .b-title{
+	margin: 0 0 40px 0;
+  }
+  .row{
+	margin-top: -55px;
+	@include _767{
+	  margin-top: -25px;
+	}
+	.col{
+		margin-top: 55px;
+	  	@include _767{
+		  width: 100%;
+		  flex: auto;
+		  margin-top: 25px;
+		}
+	}
+  }
+  &__item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@include _991{
+	  align-items: flex-start;
+	}
+	&-img{
+	  width: 247px;
+	  flex-shrink: 0;
+	  margin: 0 33px 0 0;
+	  @include _1680{
+		width: 200px;
+	  }
+	  @include _1199{
+		width: 150px;
+		margin-right: 30px;
+	  }
+	  @include _991{
+		width: 90px;
+		margin-right: 30px;
+	  }
+	}
+	&-name{
+	  font-weight: 700;
+	  font-size: 28px;
+	  line-height: 1.1;
+	  color: #000000;
+	  margin-bottom: 20px;
+	  @include _1680{
+		font-size: 24px;
+	  }
+	  @include _1199{
+		font-size: 20px;
+	  }
+	  @include _767{
+		margin-bottom: 10px;
+	  }
+	}
+	&-text{
+	  max-width: 501px;
+	  p{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 25px;
+		color: #000000;
+		@include _1680{
+		  font-size: 18px;
+		  line-height: 1.25;
+		}
+		@include _1199{
+		  font-size: 16px;
+		}
+		@include _991{
+		  font-size: 16px;
+		}
+		@include _767{
+		  font-size: 14px;
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,51 @@
+.b-video{
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto 0;
+  @include _767{
+	height: 806px;
+  }
+  img{
+	margin: 0 auto 0;
+	@include _767{
+	  object-fit: cover;
+	  height: 100%;
+	}
+  }
+  &:before{
+	position: absolute;
+	bottom: -522px;
+	left: 0;
+	content: "";
+	background: url("../img/vl.png") center no-repeat;
+	width: 535px;
+	height: 895px;
+	@include _1680{
+	  bottom: -287px;
+	  height: 503px;
+	  max-width: 299px;
+	  background-size: contain;
+	}
+	@include _1199{
+	  display: none;
+	}
+  }
+  &:after{
+	position: absolute;
+	bottom: -282px;
+	right: 0;
+	content: "";
+	background: url("../img/vr.png") center no-repeat;
+	width: 404px;
+	height: 282px;
+	@include _1680 {
+	  bottom: -207px;
+	  height: 208px;
+	  max-width: 299px;
+	  background-size: contain;
+	}
+	@include _1199{
+	  display: none;
+	}
+  }
+}

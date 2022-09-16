@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro.eot');
+  src: local('DIN Pro'), local('DINPro'),
+  url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DINPro.woff') format('woff'),
+  url('../fonts/DINPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Medium.eot');
+  src: local('DIN Pro Medium'), local('DINPro-Medium'),
+  url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DINPro-Medium.woff') format('woff'),
+  url('../fonts/DINPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Bold.eot');
+  src: local('DIN Pro Bold'), local('DINPro-Bold'),
+  url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DINPro-Bold.woff') format('woff'),
+  url('../fonts/DINPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-BoldItalic.eot');
+  src: local('DIN Pro Bold Italic'), local('DINPro-BoldItalic'),
+  url('../fonts/DINPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DINPro-BoldItalic.woff') format('woff'),
+  url('../fonts/DINPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-overflow-scrolling:touch;
+}
+body{
+  margin: 0;
+  color: $main-color;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'DIN Pro', sans-serif;
+  width: 100%;
+  background: #ffffff;
+  -webkit-overflow-scrolling: touch;
+  min-height: 100%;
+  min-width: 375px;
+  &.body-overflow{
+	overflow: hidden;
+  }
+}
+.b-container{
+  @include _767{
+    overflow: hidden;
+    position: relative;
+  }
+}
+.container{
+  max-width: 1650px;
+  margin: 0 auto 0;
+  @include box-sizing;
+  padding: 0 15px;
+  @include _1680{
+    max-width: 1200px;
+  }
+  &.sm{
+    max-width: 1470px;
+  }
+}
+/* -------------- page index -------------- */
+.b-header{
+  padding: 34px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  @include _1680{
+    padding: 15px 0;
+  }
+  @include _767{
+    padding: 30px 0 0px 0;
+    .container{
+      padding: 0 30px;
+    }
+  }
+  .b-logo{
+    @include _1680{
+      max-width: 196px;
+    }
+    @include _991{
+      max-width: 140px;
+    }
+    @include _767{
+      max-width: 115px;
+    }
+  }
+  &__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include _767{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: absolute;
+      top: 0;
+      right: -300px;
+      width: calc(100% - 30px);
+      height: 100vh;
+      background: #9CC57C;
+      padding: 171px 40px 70px 40px;
+      @include box-sizing;
+      @include transition;
+      opacity: 0;
+      visibility: hidden;
+      &.active{
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &-logo{
+      display: none;
+      @include _767{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+      }
+    }
+  }
+  .b-nav{
+    margin-right: 79px;
+    @include _1680{
+      margin-right: 40px;
+    }
+    @include _991{
+      margin-right: 20px;
+    }
+    ul{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @include _767{
+        display: block;
+      }
+      li{
+        &:not(:last-child){
+          margin-right: 79px;
+          @include _1680{
+            margin-right: 40px;
+          }
+          @include _991{
+            margin-right: 20px;
+          }
+          @include _767{
+            margin: 0 0 45px 0;
+          }
+        }
+        a{
+          display: block;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 1;
+          color: #000000;
+          position: relative;
+          @include _1680{
+            font-size: 20px;
+          }
+          @include _991{
+            font-size: 16px;
+          }
+          @include _767{
+            font-size: 28px;
+            color: #FFFFFF;
+            display: inline-block;
+          }
+          &:after{
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            content: "";
+            width: 0px;
+            height: 2px;
+            background: #000000;
+            @include transition;
+            @include _767{
+              background: #ffffff;
+            }
+          }
+          &:hover{
+            &:after{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .b-header__social{
+    ul{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      li{
+        a{
+          max-width: 50px;
+          display: block;
+          @include transition;
+          @include _1680{
+            max-width: 40px;
+          }
+          @include _991{
+            max-width: 30px;
+          }
+          @include _767{
+            max-width: 50px;
+            svg{
+              fill: #ffffff;
+            }
+          }
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+        &:not(:last-child){
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

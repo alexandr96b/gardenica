@@ -1,0 +1,196 @@
+.b-prizes{
+  padding: 21px 0 100px 0;
+  background: #E3E6E1;
+  @include box-sizing;
+  @include _1680{
+	padding: 50px 0;
+  }
+  .container{
+	padding-left: 100px;
+	padding-right: 100px;
+	@include _1680{
+	  padding: 0 15px;
+	}
+  }
+  .b-title{
+	margin: 0 0 68px 0;
+	@include _991{
+	  margin-bottom: 50px;
+	}
+	.b-title__item{
+	  margin: 0 0 20px 0;
+	}
+	span{
+	  font-weight: 400;
+	  font-size: 30px;
+	  line-height: 1.2;
+	  text-align: center;
+	  color: #000000;
+	  @include _1199{
+		font-size: 18px;
+	  }
+	  @include _991{
+		font-size: 14px;
+	  }
+	}
+  }
+  .row{
+	margin: 0 -62px 95px -62px;
+	@include _1680{
+	  margin: 0 -15px 95px -15px;
+	}
+	@include _991{
+	  margin-bottom: 0px;
+	}
+	.col{
+	  padding-left: 62px;
+	  padding-right: 62px;
+	  @include _1680{
+		padding-left: 15px;
+		padding-right: 15px;
+	  }
+	  @include _991{
+		width: 100%;
+		flex: auto;
+		margin-bottom: 40px;
+	  }
+	}
+  }
+  &__item{
+	&-img{
+	  width: 411px;
+	  height: 411px;
+	  border-radius: 100%;
+	  margin: 0 auto 30px;
+	  @include _1680{
+		width: 280px;
+		height: 280px;
+	  }
+	  @include _1199{
+		width: 247px;
+		height: 247px;
+		margin: 0 auto 20px
+	  }
+	}
+	&-text{
+	  text-align: center;
+	  p{
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 38px;
+		text-align: center;
+		color: #000000;
+		@include _1680{
+		  font-size: 24px;
+		  line-height: 1.2;
+		}
+		@include _1199{
+		  font-size: 20px;
+		}
+		&:not(:last-child){
+		  margin-bottom: 23px;
+		  @include _1680{
+			margin-bottom: 15px;
+		  }
+		}
+		b{
+		  font-weight: 700;
+		}
+	  }
+	}
+  }
+  &__block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 94px;
+	@include _1680{
+	  margin-bottom: 50px;
+	}
+	@include _767{
+	  flex-direction: column-reverse;
+	  text-align: center;
+	}
+	&-img{
+	  width: 411px;
+	  height: 411px;
+	  border-radius: 100%;
+	  margin-right: 75px;
+	  @include _1680{
+		width: 280px;
+		height: 280px;
+		margin-right: 50px;
+	  }
+	  @include _1199{
+		width: 246px;
+		height: 246px;
+	  }
+	  @include _767{
+		margin: 0 auto 0;
+	  }
+	}
+	&-text{
+	  @include _767{
+		max-width: 312px;
+		margin: 0 auto 36px;
+	  }
+	  span{
+		display: block;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 35px;
+		color: #000000;
+		margin-bottom: 2px;
+		@include _1680{
+		  font-size: 24px;
+		  line-height: 1.1;
+		  margin-bottom: 15px;
+		}
+		@include _1199{
+		  font-size: 20px;
+		}
+	  }
+	  b{
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 88px;
+		text-transform: uppercase;
+		color: #000000;
+		display: block;
+		margin-bottom: 10px;
+		@include _1680{
+		  font-size: 50px;
+		  line-height: 1;
+		  margin-bottom: 20px;
+		}
+		@include _1199{
+		  font-size: 40px;
+		}
+	  }
+	  strong{
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 1;
+		text-transform: uppercase;
+		color: #000000;
+		background: #9CC57C;
+		padding: 0 20px;
+		@include box-sizing;
+		@include _1199{
+		  font-size: 40px;
+		}
+		@include _767{
+		  display: block;
+		}
+	  }
+	}
+  }
+  &__bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include _767{
+	  display: none;
+	}
+  }
+}

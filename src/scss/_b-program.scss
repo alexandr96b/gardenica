@@ -1,0 +1,125 @@
+.b-program{
+  padding: 86px 0 110px 0;
+  @include box-sizing;
+  background: url("../img/prbg.webp") center top no-repeat;
+  background-size: cover;
+  @include _1680{
+    padding: 50px 0;
+  }
+  @include _767{
+    padding: 40px 0;
+  }
+  .b-title{
+	margin: 0 0 110px 0;
+    @include _1680{
+      margin: 0 0 60px 0;
+    }
+    @include _767{
+      margin: 0 0 35px 0;
+    }
+  }
+  &__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 93.02%);
+    filter: drop-shadow(8px 9px 18px rgba(0, 0, 0, 0.08));
+    border-radius: 20px;
+    padding: 50px 50px 50px 105px;
+    max-width: 1440px;
+    margin: 0 auto 0;
+    @include box-sizing;
+    &:not(:last-child){
+      margin: 0 auto 50px;
+      @include _991{
+        margin: 0 0 10px 0;
+      }
+    }
+    @include _1680{
+      padding: 25px;
+    }
+    @include _767{
+      display: block;
+    }
+    &-left{
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: #397A24;
+      width: 320px;
+      flex-shrink: 0;
+      @include _1680{
+        font-size: 50px;
+      }
+      @include _1199{
+        width: 250px;
+        font-size: 40px;
+      }
+      @include _991{
+        width: 200px;
+        font-size: 35px;
+      }
+      @include _767{
+        width: 100%;
+        margin: 0 0 16px 0;
+        font-size: 24px;
+      }
+    }
+    &-text{
+      b{
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        color: #397A24;
+        margin-bottom: 20px;
+        @include _1680{
+          font-size: 20px;
+          line-height: 1.1;
+        }
+        @include _991{
+          font-size: 18px;
+        }
+        @include _767{
+          margin-bottom: 16px;
+        }
+      }
+      ul{
+        padding-left: 24px;
+        @include _991{
+          padding-left: 17px;
+        }
+        @include box-sizing;
+        li{
+          list-style: disc;
+          list-style-position: outside;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 35px;
+          color: #000000;
+          @include _1680{
+            font-size: 20px;
+            line-height: 1.4;
+          }
+          @include _991{
+            font-size: 14px;
+            line-height: 1.25;
+            &:not(:last-child){
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .b-program__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    @include _767{
+      margin-top: 26px;
+    }
+  }
+}

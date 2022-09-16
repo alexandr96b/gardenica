@@ -1,0 +1,251 @@
+.b-main{
+  background: url("../img/main.webp") center top no-repeat;
+  background-size: cover;
+  padding: 152px 0 0 0;
+  @include box-sizing;
+  @include _1680{
+    padding: 100px 0 0 0;
+  }
+  @include _991{
+    padding: 79px 0 0 0;
+  }
+  @include _767{
+    padding: 115px 0 0;
+  }
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    @include translate(-80% , 0);
+    background: url("../img/leavesm.webp") center no-repeat;
+    width: 377px;
+    height: 273px;
+    z-index: 20;
+    @include _1680{
+      height: 180px;
+      max-width: 250px;
+      background-size: contain;
+      @include translate(-57% , 0);
+    }
+    @include _1199{
+      @include translate(-78% , 0);
+    }
+    @include _991{
+      height: 132px;
+      max-width: 184px;
+      @include translate(-70% , 0);
+    }
+    @include _767{
+      display: none;
+    }
+  }
+  .container{
+    @include _767{
+      padding: 0 30px;
+    }
+  }
+  &__wrapper{
+    max-width: 1920px;
+    margin: 0 auto 0;
+    position: relative;
+    @include _1680{
+      max-width: 1200px;
+    }
+  }
+  &__left{
+    max-width: 782px;
+    padding: 29px 0 100px 0;
+    min-height: 925px;
+    @include box-sizing;
+    @include _1680{
+      padding: 15px 0 15px 0;
+      min-height: 520px;
+    }
+    @include _991{
+      min-height: 480px;
+    }
+    @include _767{
+      min-height: auto;
+      padding: 0 0 50px 0;
+    }
+    &-top{
+      margin: 0 0 73px 0;
+      @include _1680{
+        margin-bottom: 25px;
+      }
+      @include _767{
+        margin-bottom: 40px;
+      }
+      @include _767{
+        text-align: center;
+      }
+      .b-main__title{
+        font-size: 48px;
+        line-height: 1;
+        @include _1680{
+          font-size: 32px;
+          margin-bottom: 15px;
+        }
+        @include _991{
+          font-size: 29px;
+        }
+        @include _767{
+          font-size: 38px;
+          line-height: 46px;
+          text-transform: uppercase;
+        }
+        span{
+          display: block;
+          font-size: 128px;
+          @include _1680{
+            font-size: 76px;
+          }
+          @include _767{
+            font-size: 82px;
+            line-height: 1.1;
+          }
+
+        }
+      }
+      &-date{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1;
+        color: #000000;
+      }
+    }
+    .b-main__left-content{
+      margin-bottom: 52px;
+      max-width: 565px;
+      @include _1680{
+        margin-bottom: 25px;
+      }
+      @include _991{
+        max-width: 390px;
+      }
+      @include _767{
+        margin: 0 auto 50px;
+      }
+      p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 15px;
+        @include _1680{
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+        @include _767{
+          text-align: center;
+          font-size: 24px;
+          margin-bottom: 16px;
+        }
+      }
+      ul{
+        li{
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: #000000;
+          position: relative;
+          padding-left: 48px;
+          @include box-sizing;
+          @include _1680{
+            font-size: 18px;
+            line-height: 24px;
+          }
+          @include _1199{
+            font-size: 17px;
+            line-height: 22px;
+          }
+          @include _991{
+            font-size: 16px;
+          }
+          @include _767{
+            font-size: 14px;
+            padding-left: 29px;
+          }
+          &:before{
+            position: absolute;
+            top: 6px;
+            left: 0;
+            content: "";
+            background: url("../img/mico.svg") center no-repeat;
+            width: 26px;
+            height: 24px;
+            @include _1680{
+              top: 4px;
+            }
+            @include _767{
+              max-width: 17px;
+              background-size: 17px;
+              top: 0;
+            }
+          }
+          &:not(last-child){
+            margin-bottom: 25px;
+            @include _1680{
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+    .b-main__left-bottom{
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 62px;
+      text-transform: uppercase;
+      color: #28722F;
+      margin-bottom: 53px;
+      @include _1680{
+        font-size: 34px;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+      @include _991{
+        font-size: 27px;
+      }
+      span{
+        font-weight: 700;
+      }
+      @include _767{
+        font-size: 34px;
+        line-height: 43px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+    @include _767{
+      .b-btn{
+        margin: 0 auto 0;
+      }
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    max-width: 973px;
+    @include _1810{
+      max-width: 50%;
+    }
+    @include _1680{
+      max-width: 45%;
+      height: 520px;
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    @include _991{
+      height: 480px;
+    }
+    @include _767{
+      display: none;
+    }
+  }
+}

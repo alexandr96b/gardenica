@@ -1,0 +1,209 @@
+.b-participation{
+  position: relative;
+  padding: 66px 0 124px 0;
+  @include box-sizing;
+  background: url("../img/main.webp") center no-repeat;
+  background-size: cover;
+  @include _1680{
+	padding: 70px 0;
+  }
+  @include _767{
+	padding: 45px 0 80px 0;
+  }
+  &:before{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	content: "";
+	background: url("../img/leavespl.webp") center no-repeat;
+	width: 485px;
+	height: 760px;
+	@include _1680{
+	  max-width: 250px;
+	  background-size: contain;
+	  height: 392px;
+	}
+	@include _767{
+	  display: none;
+	}
+  }
+  &:after{
+	position: absolute;
+	bottom: 300px;
+	right: 0;
+	content: "";
+	background: url("../img/leavespr.webp") center no-repeat;
+	width: 273px;
+	height: 597px;
+	@include _1680{
+	  max-width: 115px;
+	  background-size: contain;
+	  height: 259px;
+	}
+	@include _767{
+	  display: none;
+	}
+  }
+  .b-title{
+	margin: 0 0 75px 0;
+	@include _767{
+	  margin-bottom: 30px;
+	}
+  }
+  &__content{
+	max-width: 1100px;
+	margin: 0 auto 90px;
+	@include _1199{
+	  margin-bottom: 65px;
+	}
+	@include _767{
+	  margin-bottom: 45px;
+	}
+	&-item{
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: flex-start;
+	  position: relative;
+	  &:not(:last-child){
+		margin-bottom: 64px;
+		@include _1680{
+		  margin-bottom: 30px;
+		}
+		@include _767{
+		  margin-bottom: 25px;
+		}
+	  }
+	}
+	&-number{
+	  background: url("../img/number.svg") center no-repeat;
+	  width: 96px;
+	  height: 96px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-shrink: 0;
+	  font-weight: 700;
+	  font-size: 50px;
+	  line-height: 1;
+	  color: #397A24;
+	  margin-right: 70px;
+	  padding: 0 7px 5px 0;
+	  @include box-sizing;
+	  @include _1680{
+		margin-right: 30px;
+	  }
+	  @include _1199{
+		width: 66px;
+		height: 66px;
+		background-size: contain;
+		font-size: 30px;
+		padding: 0 5px 5px 0;
+	  }
+	  @include _767{
+		margin-right: 17px;
+		width: 44px;
+		height: 44px;
+		font-size: 23px;
+	  }
+	}
+	&-text{
+	  p{
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 40px;
+		color: #000000;
+		margin: 0;
+		@include _1680{
+		  font-size: 24px;
+		}
+		@include _1199{
+		  font-size: 20px;
+		}
+		@include _767{
+		  font-size: 14px;
+		  line-height: 17px;
+		}
+		b{
+		  font-weight: 700;
+		}
+		span{
+		  font-size: 46px;
+		  color: #000000;
+		  font-weight: 400;
+		  line-height: 58px;
+		  @include _1680{
+			font-size: 36px;
+		  }
+		  @include _1199{
+			font-size: 26px;
+		  }
+		  @include _767{
+			font-size: 18px;
+			line-height: 22px;
+		  }
+		}
+	  }
+	  strong{
+		font-size: 46px;
+		color: #000000;
+		font-weight: 700;
+		line-height: 1;
+		background: #DDE9D4;
+		display: inline-block;
+		padding: 0 15px 10px 15px;
+		@include box-sizing;
+		@include _1680{
+		  font-size: 36px;
+		}
+		@include _1199{
+		  font-size: 26px;
+		}
+		@include _767{
+		  font-size: 18px;
+		}
+	  }
+	}
+	&-ico{
+	  position: absolute;
+	  top: -49px;
+	  right: 60px;
+	  @include _767{
+		display: none;
+	  }
+	}
+	&-item{
+	  &.last{
+		.b-participation__content-text{
+		  p{
+			margin-bottom: 10px;
+		  }
+		}
+	  }
+	}
+  }
+  &__text{
+	text-align: center;
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 1.2;
+	color: #000000;
+	margin-bottom: 90px;
+	@include _1680{
+	  font-size: 36px;
+	  margin-bottom: 50px;
+	}
+	@include _1199{
+	  font-size: 26px;
+	}
+	@include _767{
+	  font-size: 18px;
+	  line-height: 22px;
+	  margin-bottom: 45px;
+	}
+  }
+  &__bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+}
