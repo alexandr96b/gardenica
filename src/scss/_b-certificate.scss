@@ -1,15 +1,15 @@
 .b-certificate{
   position: relative;
   background: #9CC57C;
-  padding: 180px 0 50px 0;
+  padding: 180px 0 120px 0 !important;
   @include _1199{
-	padding: 100px 0 50px 0;
+	padding: 100px 0 50px 0 !important;
   }
   @include _991{
-	padding: 225px 0 50px;
+	padding: 225px 0 50px !important;
   }
   @include _767{
-	padding: 445px 0 65px 0;
+	padding: 480px 0 65px 0 !important;
   }
   @include box-sizing;
   &__top{
@@ -37,6 +37,7 @@
 	  display: block;
 	  width: 320px;
 	  max-width: 320px;
+	  padding: 24px 26px 36px 26px;
 	}
 	&-img{
 	  width: 469px;

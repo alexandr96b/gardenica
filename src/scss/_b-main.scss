@@ -49,25 +49,27 @@
     max-width: 1920px;
     margin: 0 auto 0;
     position: relative;
+    .container{
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+    }
     @include _1680{
       max-width: 1200px;
     }
   }
   &__left{
-    max-width: 782px;
-    padding: 29px 0 100px 0;
-    min-height: 925px;
+    width: 782px;
+    padding: 29px 30px 100px 0;
+    flex-shrink: 0;
     @include box-sizing;
     @include _1680{
-      padding: 15px 0 15px 0;
-      min-height: 520px;
-    }
-    @include _991{
-      min-height: 480px;
+      padding: 15px 0 60px 0;
+      width: 50%;
     }
     @include _767{
-      min-height: auto;
-      padding: 0 0 50px 0;
+      width: 100%;
+      padding: 0 0 60px 0;
     }
     &-top{
       margin: 0 0 73px 0;
@@ -226,23 +228,19 @@
     }
   }
   &__img{
-    position: absolute;
-    top: 0px;
-    right: 0;
     max-width: 973px;
+    img{
+      object-fit: cover;
+      height: 100%;
+    }
     @include _1810{
-      max-width: 50%;
+
     }
     @include _1680{
-      max-width: 45%;
-      height: 520px;
       img{
         height: 100%;
         object-fit: cover;
       }
-    }
-    @include _991{
-      height: 480px;
     }
     @include _767{
       display: none;

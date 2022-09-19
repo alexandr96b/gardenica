@@ -1,3 +1,34 @@
+var myVideo = document.getElementById("video1");
+element = document.getElementById("plvideo1");
+
+function playPause() {
+
+    if (myVideo.paused) {
+        myVideo.play();
+        element.classList.add("active");
+    } else {
+        myVideo.pause();
+        element.classList.remove("active");
+    }
+}
+
+var myVideo2 = document.getElementById("video2");
+element2 = document.getElementById("plvideo2");
+
+function playPause2() {
+
+    if (myVideo2.paused) {
+        myVideo2.play();
+        element2.classList.add("active");
+    } else {
+        myVideo2.pause();
+        element2.classList.remove("active");
+    }
+}
+
+
+
+
 $(document).ready(function () {
 
 // === Begin button ripple style === \\\

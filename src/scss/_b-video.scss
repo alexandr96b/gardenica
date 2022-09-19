@@ -2,15 +2,64 @@
   position: relative;
   max-width: 1920px;
   margin: 0 auto 0;
+  #plvideo2{
+	display: none;
+  }
+  &__play{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include translate(-50% , -50%);
+	width: 269px;
+	height: 269px;
+	background: url("../img/play.svg") center no-repeat;
+	background-size: contain;
+	@include _1680{
+	  width: 200px;
+	  height: 200px;
+	}
+	@include _1199{
+	  width: 150px;
+	  height: 150px;
+	}
+	@include _991{
+	  width: 128px;
+	  height: 128px;
+	}
+	&.active{
+	  opacity: 0;
+	  @include transition;
+	}
+  }
+  &__xs{
+	display: none;
+	height: 100%;
+  }
   @include _767{
 	height: 806px;
-  }
-  img{
-	margin: 0 auto 0;
-	@include _767{
-	  object-fit: cover;
+	&__desc{
+	  display: none;
+	}
+	&__xs{
+	  display: block;
 	  height: 100%;
 	}
+	#plvideo1{
+	  display: none;
+	}
+	#plvideo2{
+	  display: block;
+	}
+  }
+  video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  video[poster]{
+	height:100%;
+	width:100%;
+	object-fit: cover;
   }
   &:before{
 	position: absolute;

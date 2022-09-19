@@ -26,8 +26,6 @@
     filter: drop-shadow(8px 9px 18px rgba(0, 0, 0, 0.08));
     border-radius: 20px;
     padding: 50px 50px 50px 105px;
-    max-width: 1440px;
-    margin: 0 auto 0;
     @include box-sizing;
     &:not(:last-child){
       margin: 0 auto 50px;

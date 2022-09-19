@@ -490,6 +490,7 @@ select{
     font-size: 60px;
     line-height: 75px;
     text-align: center;
+    text-transform: uppercase;
     color: #256F2C;
     @include _1680{
       font-size: 40px;
@@ -533,6 +534,9 @@ select{
   padding: 30px 0;
   @include box-sizing;
   @include _991{
+    padding: 35px 0 35px 0;
+  }
+  @include _767{
     padding: 56px 0 95px 0;
   }
   .container{
@@ -551,6 +555,9 @@ select{
     line-height: 37px;
     color: #FFFFFF;
     margin-right: 90px;
+    @include _1680{
+      font-size: 20px;
+    }
     @include _991{
       font-size: 18px;
       line-height: 22px;
@@ -620,5 +627,15 @@ select{
   transition: 1s;
   @include _767{
     opacity: 1;
+  }
+}
+
+section{
+  padding: 120px 0 !important;
+  @include _1680{
+    padding: 60px 0 !important;
+  }
+  @include _767{
+
   }
 }
