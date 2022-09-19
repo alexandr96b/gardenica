@@ -7,24 +7,20 @@
   }
   &__play{
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	@include translate(-50% , -50%);
-	width: 269px;
-	height: 269px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 93%;
 	background: url("../img/play.svg") center no-repeat;
-	background-size: contain;
+	background-size: 269px;
 	@include _1680{
-	  width: 200px;
-	  height: 200px;
+	  background-size: 200px;
 	}
 	@include _1199{
-	  width: 150px;
-	  height: 150px;
+	  background-size: 150px;
 	}
 	@include _991{
-	  width: 128px;
-	  height: 128px;
+	  background-size: 128px;
 	}
 	&.active{
 	  opacity: 0;

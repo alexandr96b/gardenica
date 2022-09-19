@@ -85,6 +85,18 @@ $('.b-mobile').click(function(){
 });
 
 
+/*    $(document).on('click','.PlayPauseVideo',function(){
+        var video = $(this).closest(".video_with_link").find(".video")[0];
+        if (video.paused) {
+            video.play();
+            $('.b-video__play').addClass('active');
+        } else {
+            video.pause();
+            $('.b-video__play').removeClass('active');
+        }
+    });
+*/
+
 
     function moveMenu(){
         if ($(window).width() < 768) {
