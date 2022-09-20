@@ -85,6 +85,7 @@
       .b-main__title{
         font-size: 48px;
         line-height: 1;
+        text-transform: uppercase;
         @include _1680{
           font-size: 32px;
           margin-bottom: 15px;

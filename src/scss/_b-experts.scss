@@ -1,7 +1,7 @@
 .b-experts{
   background: url("../img/main.webp") center top no-repeat;
   background-size: cover;
-  padding: 112px 0 230px 0;
+  padding: 112px 0 230px 0 !important;
   @include box-sizing;
   position: relative;
   @include _1680{
