@@ -62,7 +62,7 @@
 	&-item{
 	  display: flex;
 	  justify-content: flex-start;
-	  align-items: flex-start;
+	  align-items: center;
 	  position: relative;
 	  &:not(:last-child){
 		margin-bottom: 64px;
@@ -142,6 +142,9 @@
 			line-height: 22px;
 		  }
 		}
+		a{
+
+		}
 	  }
 	  strong{
 		font-size: 46px;
@@ -166,7 +169,13 @@
 	&-ico{
 	  position: absolute;
 	  top: -49px;
-	  right: 60px;
+	  right: 57px;
+	  @include _1680{
+		right: 241px;
+	  }
+	  @include _991{
+		right: 44px;
+	  }
 	  @include _767{
 		display: none;
 	  }

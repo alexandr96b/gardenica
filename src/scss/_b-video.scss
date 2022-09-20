@@ -22,6 +22,9 @@
 	@include _991{
 	  background-size: 128px;
 	}
+	@include _767{
+	  display: none;
+	}
 	&.active{
 	  opacity: 0;
 	  @include transition;

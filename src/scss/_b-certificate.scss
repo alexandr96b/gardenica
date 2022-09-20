@@ -26,6 +26,7 @@
 	@include box-sizing;
 	@include _1680{
 	  padding: 15px 60px 15px 15px;
+	  max-width: 1170px;
 	}
 	@include _991{
 	  max-width: 753px;
