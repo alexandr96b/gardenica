@@ -202,6 +202,11 @@
 	  @include _1680{
 		height: 50px;
 	  }
+	  @include _767{
+		width: 100%;
+		max-width: 389px;
+		margin: 0 auto 0;
+	  }
 	}
   }
 }
